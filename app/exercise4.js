@@ -34,9 +34,13 @@
         return this + number;
     }
     Number.prototype.isInTheRange = function (a,b) {
-        if(this >=a && this<=b)return true;
-        if(a>b) return undefined;
-        if(this <a || this > b) return false;
+        if(typeof a !== 'number' || typeof b!== 'number')return false;
+        else {
+            if(this >=a && this<=b)return true;
+            if(a>b) return undefined;
+            if(this <a || this > b) return false;
+        }
+
     }
 
 
