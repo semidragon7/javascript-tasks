@@ -41,6 +41,7 @@
 
         describe('alphabetOrder', function () {
             it('should return letters in alphabetical order', function () {
+
                 expect(exercise6.alphabetOrder('alfa')).toBe('aafl');
                 expect(exercise6.alphabetOrder('bac')).toBe('abc');
             });
