@@ -89,11 +89,13 @@
         {
             it('should make object from 2D array', function ()
             {
-                expect(exercise5.makeObject([
-                    ['name', 'John'],
+                expect(exercise5.makeObject(
+
+                    [['name', 'John'],
                     ['mode', 'normal'],
-                    ['age', 31]
-                ])).toEqual({name: 'John', mode: 'normal', age: 31});
+                    ['age', 31]]
+
+                )).toEqual({name: 'John', mode: 'normal', age: 31});
                 expect(exercise5.makeObject([
                     ['a', 0],
                     ['b', 1]
@@ -132,7 +134,7 @@
                 expect(exercise5.propertyNames({a: 1, b: false, c: 'text'})).toEqual([
                     ['a', 1],
                     ['b', false],
-                    ['c', 'text']
+                    ['c', 'text'],
                 ]);
             });
 
